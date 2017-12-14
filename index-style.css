@@ -1,0 +1,31 @@
+html {
+background: cyan;
+background-size: 8px 8px;
+}
+nav ul {
+  list-style-type: none;
+  background-color: cyan;
+  border: 2px dotted #E60000;
+  border-radius: 10px;
+  max-width: 700px;
+  min-width: 256px;
+  font-family: cursive;
+  font-weight: bold;
+  padding: 16px;
+}
+nav ul li {
+  display: inline;
+  border-right: none;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+<!-- The last-child condition means that it will only apply to the last li element
+inside the ul elements within the nav elements -->
+
+nav ul li:last-child {
+  border-right: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #0000CC;
+}
